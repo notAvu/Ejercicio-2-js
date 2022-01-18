@@ -1,11 +1,14 @@
 const ggCharacters=["Millia", "Raven", "Potemkin"];
 const bbCharacters=["Hibiki", "Relius", "Hazama"];
 window.onload= inicializaEventos;
+//inicializa los listeners de los elementos de la lista
 function inicializaEventos()
 {
     document.getElementById("guilty").addEventListener("change", getGgCharacterList, false);
     document.getElementById("blaz").addEventListener("change", getBbCharacterList, false);       
 }
+//Muestra la lista de personajes de Guilty Gear
+//Asociado a la seleccion del elemento de la vista "guilty"
 function getGgCharacterList()
 {
     var select= document.getElementById("charList");
@@ -21,6 +24,8 @@ function getGgCharacterList()
         }
     }
 }
+//Muestra la lista de personajes de BlazBlue
+//Asociado a la seleccion del elemento de la vista "blaz"
 function getBbCharacterList()
 {
     var select= document.getElementById("charList");
@@ -36,6 +41,7 @@ function getBbCharacterList()
           }
     }
 }
+//Vacia la lista
 function empty(selectElement)
 {
     var L = selectElement.options.length - 1;
