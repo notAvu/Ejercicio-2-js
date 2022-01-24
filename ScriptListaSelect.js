@@ -16,6 +16,12 @@ function getGgCharacterList()
     if(document.getElementById("guilty").checked)
     {
         document.getElementById("blaz").checked=false;
+        // ggCharacters.forEach(element => {
+        //     var option=document.createElement("option");
+        //     option.value=ggCharacters.findIndex();
+        //     option.innerHTML=element;
+        //   select.appendChild(option);   
+        // });
         for(var i=0;i<ggCharacters.length; i++) {
             var option=document.createElement("option");
             option.value=i;
